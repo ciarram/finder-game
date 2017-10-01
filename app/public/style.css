@@ -1,8 +1,20 @@
 .jumbotron{
     margin-left: 40px;
     margin-right: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a.btn{
+    padding: 15px;
 }
 .nav{
-    border: solid black 1px;
+    border-bottom: solid black 1px;
     padding: 15px;
+}
+.nav-item{
+    margin-left: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.question{
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
