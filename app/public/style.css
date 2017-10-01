@@ -1,7 +1,11 @@
+body{
+    background-color: #E5FCFC;
+}
 .jumbotron{
     margin-left: 40px;
     margin-right: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #FAF1F1;
 }
 a.btn{
     padding: 15px;
@@ -9,6 +13,7 @@ a.btn{
 .nav{
     border-bottom: solid black 1px;
     padding: 15px;
+    background-color: #FAF1F1;
 }
 .nav-item{
     margin-left: 40px;
