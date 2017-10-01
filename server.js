@@ -2,11 +2,11 @@ var express = require('express');
 var bodyParser = require('body-parser');
 
 var app = express();
-var PORT = 3000;
+var PORT = process.env.PORT || 8080;
 
-app.get('/', function(res, req){
-
-})
+app.get('/', function(req, res){
+    res.send("Hello World!");
+});
 app.listen(PORT, function(){
-    console.log(PORT, "I'm listening!");
-})
+    console.log("I'm listening at http://localhost:" + PORT);
+});
