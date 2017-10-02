@@ -12,3 +12,5 @@ var user = [
         "scores": []
     }
 ]
+
+module.exports = character;
