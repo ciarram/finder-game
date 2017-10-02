@@ -6,10 +6,10 @@ var character = [
     }
 ]
 
-var user = [
-    { 
-        scores: []
-    }
-]
-console.log(user);
+// var user = [
+//     { 
+//         scores: []
+//     }
+// ]
+console.log(character);
 module.exports = character;
