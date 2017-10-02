@@ -34,6 +34,7 @@
                     <button type="button" class="btn btn-secondary number" value="5">5</button>
                 </div>
             </div>
+        <input class="btn btn-primary" type="submit" value="Submit" id="submit-numbers">
     </div>
     <footer class="footer">
         <div class="container">
@@ -43,9 +44,21 @@
     <script type="text/javascript">
         $(".number").on("click", function(){
             var number = $(this).val();
-            //number.push("/api/friends");
             console.log('cliked!', number);
+            var newScores = [];
+            newScores.push(number);
+            console.log(newScores);
         })
+        // $("#submit-numbers").on("click", function(event){
+        //     event.preventDefault();
+        //     var user = {
+        //         scores: $(".number").val()
+        //     }
+        //     $.post("/api/friends", function(data){
+        //         user.push(user[0].scores)
+        //         console.log(user);
+        //     })
+        // });
     </script>
     </body>
 </html>

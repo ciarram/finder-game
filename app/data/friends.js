@@ -1,16 +1,15 @@
 var character = [
     {
-        "name":"test",
-        "photo":"https://www.google.com/",
-        "scores": [1]
+        name:"test",
+        photo:"https://www.google.com/",
+        scores: [1]
     }
 ]
 
 var user = [
-    {
-        "name": "test 2", 
-        "scores": []
+    { 
+        scores: []
     }
 ]
-
+console.log(user);
 module.exports = character;
