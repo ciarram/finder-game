@@ -8,7 +8,7 @@ var character = [
 
 var user = [
     {
-        "name": name, 
+        "name": "test 2", 
         "scores": []
     }
 ]

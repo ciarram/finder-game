@@ -35,9 +35,15 @@
                 </div>
             </div>
     </div>
+    <footer class="footer">
+        <div class="container">
+            <p><a href="/api/friends">API Table Link</a> | <a href="https://github.com/ciarram/finder-game">GitHub Repo</a></p>
+        </div>
+    </footer>
     <script type="text/javascript">
         $(".number").on("click", function(){
             var number = $(this).val();
+            //number.push("/api/friends");
             console.log('cliked!', number);
         })
     </script>
