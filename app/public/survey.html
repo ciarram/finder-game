@@ -43,21 +43,27 @@
         </div>
     </footer>
     <script type="text/javascript">
+    $(document).ready(function(){
         var newScores = [];
         $(".number").on("click", function(){
-            newScores.push($(this).val());
-            //console.log('cliked!', number);
+            var number = parseInt($(this).val());
+            newScores.push(number);
             console.log(newScores);
         })
         $("#submit-numbers").on("click", function(event){
             event.preventDefault();
             console.log("I've been submitted!");
-
-            $.post("/api/friends", newScores, function(data){
-                newScores.push(data);
+            console.log(newScores);
+            var user = {
+                score: newScores
+                };
+            console.log(user);
+            $.post("/api/friends", user).done(function(data){  
                 console.log(data);
+                //create a new object with the array data
             })
         });
+    });
     </script>
     </body>
 </html>

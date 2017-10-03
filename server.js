@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 var PORT = process.env.PORT || 8080;
 
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
  require("./app/routing/apiRoutes")(app);
@@ -16,4 +16,3 @@ app.listen(PORT, function(){
     console.log("I'm listening at http://localhost:" + PORT);
 });
 
-//module.exports = mainServer;
